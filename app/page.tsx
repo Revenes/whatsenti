@@ -83,7 +83,7 @@ export default function Page() {
     const text = input.trim();
     if (!text) return;
 
-    const userMsg = { role: "user", content: text };
+    const userMsg: Msg = { role: "user", content: text };
     updateMessages(activeChat.id, userMsg);
     setInput("");
     setLoading(true);
